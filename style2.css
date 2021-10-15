@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid black;
+    height: 660px;
+}
+
+header{
+    background-color:orange;
+    height: 90px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+header .judul{
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color:maroon;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-family: fantasy;
+}
+
+nav ul{
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    display:inline-block;
+    padding: 10px;
+}
+nav ul li a{
+    color:yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li a:hover{
+    padding: 20px;
+    background-color:red;
+}
+
+nav ul li .drop{
+    display: none;
+}
+nav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: maroon;
+    width: auto;
+}
+
+.body{
+    display: flex;
+    height: 460px;
+    width: auto;
+}
+
+.mainContent{
+    background-color: silver;
+    height: 470px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.sideBar{
+    background-color:mediumseagreen;
+    height: 470px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.headSide{
+    background-color:greenyellow;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+table tr th{
+    padding-bottom: 30px;
+}
+.tabel1 tr{
+    font-size: 15pt;
+}
+.tabel1 tr td{
+    padding: 3pt;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color:slategrey;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
