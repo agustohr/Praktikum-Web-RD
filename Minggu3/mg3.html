@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum3</title>
+    
+</head>
+<body>
+    <label for="theme">Select Theme : </label>
+    <select name="theme" id="theme" onchange="getTheme()">
+        <option value="putih">White</option>
+        <option value="hitam">Black</option>
+    </select>
+    <br>
+    <h1>Welcome To My Website</h1>
+    <p><b>Agusto Hawlai R - 119140119</b> </p>
+    <br>
+    <label for="makan">Pilih Makanan : </label>
+    <select name="makan" id="makan" onchange="getMakan()">
+        <option value="">Pilih makanan</option>
+        <option value="nasgor">Nasgor</option>
+        <option value="bakso">Bakso</option>
+        <option value="mie">Indomie</option>
+        <option value="nuget">Nugget</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <label for="faktorial">Input Number: </label>
+    <input type="text" id="faktorial" name="faktorial">
+    <button type="submit" id="faktorial" onclick="getFaktorial()">Get Factorial</button>
+
+    <p id="demo2"></p>
+
+    <script>
+        
+        function getTheme(){
+            var theme = document.getElementById("theme").value;
+            if(theme == "putih"){
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }else if(theme == "hitam"){
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }  
+        }
+
+        function getMakan(){
+            var makan = document.getElementById("makan").value;
+            if(makan == "nasgor"){
+                document.getElementById("demo").innerHTML = "Tek tek tek nasi goreng, masak pakai sajiku, dari rempah pilihan, sudah lengkap bumbunya";
+            }else if(makan == "bakso"){
+                document.getElementById("demo").innerHTML = "Abang tukang bakso, Mari-mari sini, aku mau beli, Abang tukang bakso, Cepat dong kemari, Sudah tak tahan lagi";
+            }else if(makan == "mie"){
+                document.getElementById("demo").innerHTML = "Indomie, Indomie seleraku, Indomie dari dan bagi Indonesia, Indomie selerakuuu";
+            }else if(makan == "nuget"){
+                document.getElementById("demo").innerHTML = "Fiesta chicken nuget, paling enak paling kusuka, Fiesta chicken nuget, aku mau setiap hari";
+            }else{
+                document.getElementById("demo").innerHTML = "";
+            }
+        }
+
+        function getFaktorial(){
+            var angka = document.getElementById("faktorial").value;
+            var hasil = 1;
+            var bil = 0;
+            for (bil = angka; bil >= 1; bil--){
+                hasil = hasil * bil;
+            }
+            document.getElementById("demo2").innerHTML = hasil;
+        }
+        
+    </script>
+    
+</body>
+</html>
