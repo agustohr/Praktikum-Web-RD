@@ -20,3 +20,5 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 Nama  :Agusto Hawlai Rajagukguk
 <br>
 NIM   :119140119
+
+Membuat file css terpisah pada home dan index, serta membuat button logout pada home
